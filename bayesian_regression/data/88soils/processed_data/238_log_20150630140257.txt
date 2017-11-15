@@ -1,0 +1,49 @@
+Logging started at 14:02:57 on 30 Jun 2015
+QIIME version: 1.9.0-dev, master@07db735
+
+qiime_config values:
+pick_otus_reference_seqs_fp	/home/qiita/.virtualenvs/qiita/lib/python2.7/site-packages/qiime_default_reference/gg_13_8_otus/rep_set/97_otus.fasta
+sc_queue	all.q
+pynast_template_alignment_fp	/home/qiita/.virtualenvs/qiita/lib/python2.7/site-packages/qiime_default_reference/gg_13_8_otus/rep_set_aligned/85_otus.pynast.fasta
+cluster_jobs_fp	/home/qiita/cluster_jobs_8.py
+assign_taxonomy_reference_seqs_fp	/home/qiita/.virtualenvs/qiita/lib/python2.7/site-packages/qiime_default_reference/gg_13_8_otus/rep_set/97_otus.fasta
+torque_queue	friendlyq
+jobs_to_start	1
+denoiser_min_per_core	50
+assign_taxonomy_id_to_taxonomy_fp	/home/qiita/.virtualenvs/qiita/lib/python2.7/site-packages/qiime_default_reference/gg_13_8_otus/taxonomy/97_otu_taxonomy.txt
+temp_dir	/projects/qiita_data/tmp/
+blastall_fp	blastall
+seconds_to_sleep	1
+
+parameter file values:
+parallel:jobs_to_start	40
+pick_otus:otu_picking_method	sortmerna
+pick_otus:similarity	0.97
+pick_otus:sortmerna_e_value	1.0
+pick_otus:sortmerna_max_pos	10000
+pick_otus:threads	1
+pick_otus:sortmerna_coverage	0.97
+
+Input file md5 sums:
+/projects/qiita_data/preprocessed_data/306_seqs.fna: 3329ed651b7a4bffe46649164dd3798e
+/projects/qiita_data/reference/Greengenes_13_8-97_97_otus.fasta: 50b2269712b3738afb41892bed936c29
+/projects/qiita_data/reference/Greengenes_13_8-97_97_otu_taxonomy.txt: 56ef15dccf2e931ec173f4f977ed649b
+
+Executing commands.
+
+# Pick OTUs command 
+parallel_pick_otus_sortmerna.py -i /projects/qiita_data/preprocessed_data/306_seqs.fna -o /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus -r /projects/qiita_data/reference/Greengenes_13_8-97_97_otus.fasta -T --jobs_to_start 40 --similarity 0.97 --threads 1 --sortmerna_coverage 0.97 --sortmerna_e_value 1.0 --sortmerna_max_pos 10000
+
+Stdout:
+
+Stderr:
+
+# Make OTU table command 
+make_otu_table.py -i /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/306_seqs_otus.txt -t /projects/qiita_data/reference/Greengenes_13_8-97_97_otu_taxonomy.txt -o /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/otu_table.biom 
+
+Stdout:
+
+Stderr:
+
+
+Logging stopped at 14:30:08 on 30 Jun 2015

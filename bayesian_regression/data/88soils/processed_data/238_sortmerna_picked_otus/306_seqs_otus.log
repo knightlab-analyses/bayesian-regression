@@ -1,0 +1,560 @@
+OtuPicker parameters:
+best:1
+blast:False
+coverage:0.97
+max_e_value:1.0
+max_pos:10000
+prefilter_identical_sequences:True
+similarity:0.97
+threads:1
+SortMeRNA database: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/Greengenes_13_8-97_97_otus
+Num OTUs: 1099
+Num failures: 2451
+Result path: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/0/POTU_A4Gi_.0_otus.txt
+
+OtuPicker parameters:
+best:1
+blast:False
+coverage:0.97
+max_e_value:1.0
+max_pos:10000
+prefilter_identical_sequences:True
+similarity:0.97
+threads:1
+SortMeRNA database: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/Greengenes_13_8-97_97_otus
+Num OTUs: 1211
+Num failures: 2318
+Result path: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/1/POTU_A4Gi_.1_otus.txt
+
+OtuPicker parameters:
+best:1
+blast:False
+coverage:0.97
+max_e_value:1.0
+max_pos:10000
+prefilter_identical_sequences:True
+similarity:0.97
+threads:1
+SortMeRNA database: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/Greengenes_13_8-97_97_otus
+Num OTUs: 1207
+Num failures: 2330
+Result path: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/2/POTU_A4Gi_.2_otus.txt
+
+OtuPicker parameters:
+best:1
+blast:False
+coverage:0.97
+max_e_value:1.0
+max_pos:10000
+prefilter_identical_sequences:True
+similarity:0.97
+threads:1
+SortMeRNA database: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/Greengenes_13_8-97_97_otus
+Num OTUs: 1251
+Num failures: 2286
+Result path: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/3/POTU_A4Gi_.3_otus.txt
+
+OtuPicker parameters:
+best:1
+blast:False
+coverage:0.97
+max_e_value:1.0
+max_pos:10000
+prefilter_identical_sequences:True
+similarity:0.97
+threads:1
+SortMeRNA database: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/Greengenes_13_8-97_97_otus
+Num OTUs: 1211
+Num failures: 2297
+Result path: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/4/POTU_A4Gi_.4_otus.txt
+
+OtuPicker parameters:
+best:1
+blast:False
+coverage:0.97
+max_e_value:1.0
+max_pos:10000
+prefilter_identical_sequences:True
+similarity:0.97
+threads:1
+SortMeRNA database: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/Greengenes_13_8-97_97_otus
+Num OTUs: 1218
+Num failures: 2309
+Result path: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/5/POTU_A4Gi_.5_otus.txt
+
+OtuPicker parameters:
+best:1
+blast:False
+coverage:0.97
+max_e_value:1.0
+max_pos:10000
+prefilter_identical_sequences:True
+similarity:0.97
+threads:1
+SortMeRNA database: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/Greengenes_13_8-97_97_otus
+Num OTUs: 1197
+Num failures: 2290
+Result path: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/6/POTU_A4Gi_.6_otus.txt
+
+OtuPicker parameters:
+best:1
+blast:False
+coverage:0.97
+max_e_value:1.0
+max_pos:10000
+prefilter_identical_sequences:True
+similarity:0.97
+threads:1
+SortMeRNA database: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/Greengenes_13_8-97_97_otus
+Num OTUs: 1254
+Num failures: 2206
+Result path: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/7/POTU_A4Gi_.7_otus.txt
+
+OtuPicker parameters:
+best:1
+blast:False
+coverage:0.97
+max_e_value:1.0
+max_pos:10000
+prefilter_identical_sequences:True
+similarity:0.97
+threads:1
+SortMeRNA database: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/Greengenes_13_8-97_97_otus
+Num OTUs: 1217
+Num failures: 2269
+Result path: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/8/POTU_A4Gi_.8_otus.txt
+
+OtuPicker parameters:
+best:1
+blast:False
+coverage:0.97
+max_e_value:1.0
+max_pos:10000
+prefilter_identical_sequences:True
+similarity:0.97
+threads:1
+SortMeRNA database: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/Greengenes_13_8-97_97_otus
+Num OTUs: 1238
+Num failures: 2289
+Result path: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/9/POTU_A4Gi_.9_otus.txt
+
+OtuPicker parameters:
+best:1
+blast:False
+coverage:0.97
+max_e_value:1.0
+max_pos:10000
+prefilter_identical_sequences:True
+similarity:0.97
+threads:1
+SortMeRNA database: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/Greengenes_13_8-97_97_otus
+Num OTUs: 1260
+Num failures: 2259
+Result path: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/10/POTU_A4Gi_.10_otus.txt
+
+OtuPicker parameters:
+best:1
+blast:False
+coverage:0.97
+max_e_value:1.0
+max_pos:10000
+prefilter_identical_sequences:True
+similarity:0.97
+threads:1
+SortMeRNA database: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/Greengenes_13_8-97_97_otus
+Num OTUs: 1239
+Num failures: 2282
+Result path: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/11/POTU_A4Gi_.11_otus.txt
+
+OtuPicker parameters:
+best:1
+blast:False
+coverage:0.97
+max_e_value:1.0
+max_pos:10000
+prefilter_identical_sequences:True
+similarity:0.97
+threads:1
+SortMeRNA database: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/Greengenes_13_8-97_97_otus
+Num OTUs: 1251
+Num failures: 2267
+Result path: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/12/POTU_A4Gi_.12_otus.txt
+
+OtuPicker parameters:
+best:1
+blast:False
+coverage:0.97
+max_e_value:1.0
+max_pos:10000
+prefilter_identical_sequences:True
+similarity:0.97
+threads:1
+SortMeRNA database: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/Greengenes_13_8-97_97_otus
+Num OTUs: 1236
+Num failures: 2279
+Result path: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/13/POTU_A4Gi_.13_otus.txt
+
+OtuPicker parameters:
+best:1
+blast:False
+coverage:0.97
+max_e_value:1.0
+max_pos:10000
+prefilter_identical_sequences:True
+similarity:0.97
+threads:1
+SortMeRNA database: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/Greengenes_13_8-97_97_otus
+Num OTUs: 1238
+Num failures: 2325
+Result path: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/14/POTU_A4Gi_.14_otus.txt
+
+OtuPicker parameters:
+best:1
+blast:False
+coverage:0.97
+max_e_value:1.0
+max_pos:10000
+prefilter_identical_sequences:True
+similarity:0.97
+threads:1
+SortMeRNA database: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/Greengenes_13_8-97_97_otus
+Num OTUs: 1271
+Num failures: 2269
+Result path: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/15/POTU_A4Gi_.15_otus.txt
+
+OtuPicker parameters:
+best:1
+blast:False
+coverage:0.97
+max_e_value:1.0
+max_pos:10000
+prefilter_identical_sequences:True
+similarity:0.97
+threads:1
+SortMeRNA database: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/Greengenes_13_8-97_97_otus
+Num OTUs: 1206
+Num failures: 2318
+Result path: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/16/POTU_A4Gi_.16_otus.txt
+
+OtuPicker parameters:
+best:1
+blast:False
+coverage:0.97
+max_e_value:1.0
+max_pos:10000
+prefilter_identical_sequences:True
+similarity:0.97
+threads:1
+SortMeRNA database: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/Greengenes_13_8-97_97_otus
+Num OTUs: 1135
+Num failures: 2397
+Result path: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/17/POTU_A4Gi_.17_otus.txt
+
+OtuPicker parameters:
+best:1
+blast:False
+coverage:0.97
+max_e_value:1.0
+max_pos:10000
+prefilter_identical_sequences:True
+similarity:0.97
+threads:1
+SortMeRNA database: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/Greengenes_13_8-97_97_otus
+Num OTUs: 1143
+Num failures: 2433
+Result path: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/18/POTU_A4Gi_.18_otus.txt
+
+OtuPicker parameters:
+best:1
+blast:False
+coverage:0.97
+max_e_value:1.0
+max_pos:10000
+prefilter_identical_sequences:True
+similarity:0.97
+threads:1
+SortMeRNA database: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/Greengenes_13_8-97_97_otus
+Num OTUs: 1208
+Num failures: 2322
+Result path: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/19/POTU_A4Gi_.19_otus.txt
+
+OtuPicker parameters:
+best:1
+blast:False
+coverage:0.97
+max_e_value:1.0
+max_pos:10000
+prefilter_identical_sequences:True
+similarity:0.97
+threads:1
+SortMeRNA database: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/Greengenes_13_8-97_97_otus
+Num OTUs: 1261
+Num failures: 2287
+Result path: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/20/POTU_A4Gi_.20_otus.txt
+
+OtuPicker parameters:
+best:1
+blast:False
+coverage:0.97
+max_e_value:1.0
+max_pos:10000
+prefilter_identical_sequences:True
+similarity:0.97
+threads:1
+SortMeRNA database: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/Greengenes_13_8-97_97_otus
+Num OTUs: 1247
+Num failures: 2209
+Result path: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/21/POTU_A4Gi_.21_otus.txt
+
+OtuPicker parameters:
+best:1
+blast:False
+coverage:0.97
+max_e_value:1.0
+max_pos:10000
+prefilter_identical_sequences:True
+similarity:0.97
+threads:1
+SortMeRNA database: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/Greengenes_13_8-97_97_otus
+Num OTUs: 1262
+Num failures: 2244
+Result path: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/22/POTU_A4Gi_.22_otus.txt
+
+OtuPicker parameters:
+best:1
+blast:False
+coverage:0.97
+max_e_value:1.0
+max_pos:10000
+prefilter_identical_sequences:True
+similarity:0.97
+threads:1
+SortMeRNA database: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/Greengenes_13_8-97_97_otus
+Num OTUs: 1304
+Num failures: 2159
+Result path: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/23/POTU_A4Gi_.23_otus.txt
+
+OtuPicker parameters:
+best:1
+blast:False
+coverage:0.97
+max_e_value:1.0
+max_pos:10000
+prefilter_identical_sequences:True
+similarity:0.97
+threads:1
+SortMeRNA database: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/Greengenes_13_8-97_97_otus
+Num OTUs: 1301
+Num failures: 2155
+Result path: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/24/POTU_A4Gi_.24_otus.txt
+
+OtuPicker parameters:
+best:1
+blast:False
+coverage:0.97
+max_e_value:1.0
+max_pos:10000
+prefilter_identical_sequences:True
+similarity:0.97
+threads:1
+SortMeRNA database: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/Greengenes_13_8-97_97_otus
+Num OTUs: 1270
+Num failures: 2167
+Result path: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/25/POTU_A4Gi_.25_otus.txt
+
+OtuPicker parameters:
+best:1
+blast:False
+coverage:0.97
+max_e_value:1.0
+max_pos:10000
+prefilter_identical_sequences:True
+similarity:0.97
+threads:1
+SortMeRNA database: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/Greengenes_13_8-97_97_otus
+Num OTUs: 1271
+Num failures: 2210
+Result path: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/26/POTU_A4Gi_.26_otus.txt
+
+OtuPicker parameters:
+best:1
+blast:False
+coverage:0.97
+max_e_value:1.0
+max_pos:10000
+prefilter_identical_sequences:True
+similarity:0.97
+threads:1
+SortMeRNA database: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/Greengenes_13_8-97_97_otus
+Num OTUs: 1268
+Num failures: 2189
+Result path: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/27/POTU_A4Gi_.27_otus.txt
+
+OtuPicker parameters:
+best:1
+blast:False
+coverage:0.97
+max_e_value:1.0
+max_pos:10000
+prefilter_identical_sequences:True
+similarity:0.97
+threads:1
+SortMeRNA database: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/Greengenes_13_8-97_97_otus
+Num OTUs: 1277
+Num failures: 2192
+Result path: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/28/POTU_A4Gi_.28_otus.txt
+
+OtuPicker parameters:
+best:1
+blast:False
+coverage:0.97
+max_e_value:1.0
+max_pos:10000
+prefilter_identical_sequences:True
+similarity:0.97
+threads:1
+SortMeRNA database: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/Greengenes_13_8-97_97_otus
+Num OTUs: 1285
+Num failures: 2195
+Result path: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/29/POTU_A4Gi_.29_otus.txt
+
+OtuPicker parameters:
+best:1
+blast:False
+coverage:0.97
+max_e_value:1.0
+max_pos:10000
+prefilter_identical_sequences:True
+similarity:0.97
+threads:1
+SortMeRNA database: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/Greengenes_13_8-97_97_otus
+Num OTUs: 1294
+Num failures: 2184
+Result path: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/30/POTU_A4Gi_.30_otus.txt
+
+OtuPicker parameters:
+best:1
+blast:False
+coverage:0.97
+max_e_value:1.0
+max_pos:10000
+prefilter_identical_sequences:True
+similarity:0.97
+threads:1
+SortMeRNA database: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/Greengenes_13_8-97_97_otus
+Num OTUs: 1263
+Num failures: 2197
+Result path: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/31/POTU_A4Gi_.31_otus.txt
+
+OtuPicker parameters:
+best:1
+blast:False
+coverage:0.97
+max_e_value:1.0
+max_pos:10000
+prefilter_identical_sequences:True
+similarity:0.97
+threads:1
+SortMeRNA database: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/Greengenes_13_8-97_97_otus
+Num OTUs: 1266
+Num failures: 2185
+Result path: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/32/POTU_A4Gi_.32_otus.txt
+
+OtuPicker parameters:
+best:1
+blast:False
+coverage:0.97
+max_e_value:1.0
+max_pos:10000
+prefilter_identical_sequences:True
+similarity:0.97
+threads:1
+SortMeRNA database: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/Greengenes_13_8-97_97_otus
+Num OTUs: 1269
+Num failures: 2227
+Result path: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/33/POTU_A4Gi_.33_otus.txt
+
+OtuPicker parameters:
+best:1
+blast:False
+coverage:0.97
+max_e_value:1.0
+max_pos:10000
+prefilter_identical_sequences:True
+similarity:0.97
+threads:1
+SortMeRNA database: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/Greengenes_13_8-97_97_otus
+Num OTUs: 1277
+Num failures: 2220
+Result path: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/34/POTU_A4Gi_.34_otus.txt
+
+OtuPicker parameters:
+best:1
+blast:False
+coverage:0.97
+max_e_value:1.0
+max_pos:10000
+prefilter_identical_sequences:True
+similarity:0.97
+threads:1
+SortMeRNA database: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/Greengenes_13_8-97_97_otus
+Num OTUs: 1261
+Num failures: 2222
+Result path: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/35/POTU_A4Gi_.35_otus.txt
+
+OtuPicker parameters:
+best:1
+blast:False
+coverage:0.97
+max_e_value:1.0
+max_pos:10000
+prefilter_identical_sequences:True
+similarity:0.97
+threads:1
+SortMeRNA database: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/Greengenes_13_8-97_97_otus
+Num OTUs: 1218
+Num failures: 2236
+Result path: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/36/POTU_A4Gi_.36_otus.txt
+
+OtuPicker parameters:
+best:1
+blast:False
+coverage:0.97
+max_e_value:1.0
+max_pos:10000
+prefilter_identical_sequences:True
+similarity:0.97
+threads:1
+SortMeRNA database: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/Greengenes_13_8-97_97_otus
+Num OTUs: 1186
+Num failures: 2250
+Result path: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/37/POTU_A4Gi_.37_otus.txt
+
+OtuPicker parameters:
+best:1
+blast:False
+coverage:0.97
+max_e_value:1.0
+max_pos:10000
+prefilter_identical_sequences:True
+similarity:0.97
+threads:1
+SortMeRNA database: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/Greengenes_13_8-97_97_otus
+Num OTUs: 1205
+Num failures: 2276
+Result path: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/38/POTU_A4Gi_.38_otus.txt
+
+OtuPicker parameters:
+best:1
+blast:False
+coverage:0.97
+max_e_value:1.0
+max_pos:10000
+prefilter_identical_sequences:True
+similarity:0.97
+threads:1
+SortMeRNA database: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/Greengenes_13_8-97_97_otus
+Num OTUs: 1140
+Num failures: 2364
+Result path: /projects/qiita_data/working_dir/pick_otus_otu_306_dcsy61/sortmerna_picked_otus/POTU_A4Gi_/39/POTU_A4Gi_.39_otus.txt
+
