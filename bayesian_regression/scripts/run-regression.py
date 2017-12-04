@@ -48,12 +48,14 @@ def bayes_mult_cmd(table_file, metadata_file, formula, output_file):
     # basic filtering parameters
     soil_filter = lambda val, id_, md: id_ in metadata.index
     read_filter = lambda val, id_, md: np.sum(val) > 10
+    #sparse_filter = lambda val, id_, md: np.mean(val > 0) > 0.1
     sample_filter = lambda val, id_, md: np.sum(val) > 1000
 
     table = table.filter(soil_filter, axis='sample')
     table = table.filter(sample_filter, axis='sample')
     table = table.filter(read_filter, axis='observation')
-
+    #table = table.filter(sparse_filter, axis='observation')
+    print(table.shape)
     y_data = pd.DataFrame(np.array(table.matrix_data.todense()).T,
                           index=table.ids(axis='sample'),
                           columns=table.ids(axis='observation'))
@@ -61,14 +63,14 @@ def bayes_mult_cmd(table_file, metadata_file, formula, output_file):
     y_data, G_data = y_data.align(G_data, axis=0, join='inner')
 
     psi = _gram_schmidt_basis(y_data.shape[1])
-    psi = tf.convert_to_tensor(psi, dtype=tf.float32)
     G_data = G_data.values
     y_data = y_data.values
     N, D = y_data.shape
     p = G_data.shape[1] # number of covariates
     r = G_data.shape[1] # rank of covariance matrix
-    n = tf.convert_to_tensor(y_data.sum(axis=1), dtype=tf.float32)
 
+    psi = tf.convert_to_tensor(psi, dtype=tf.float32)
+    n = tf.convert_to_tensor(y_data.sum(axis=1), dtype=tf.float32)
 
     # hack to get multinomial working
     def _sample_n(self, n=1, seed=None):
@@ -123,7 +125,7 @@ def bayes_mult_cmd(table_file, metadata_file, formula, output_file):
         data={G: G_data, Y: y_data, z: qz}
     )
 
-    inference_z.initialize(step_size=1e-10)
+    inference_z.initialize(step_size=1e-20)
     inference_BL.initialize()
 
     sess = ed.get_session()
