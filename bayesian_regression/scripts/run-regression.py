@@ -92,47 +92,56 @@ def bayes_mult_cmd(table_file, metadata_file, formula, output_file):
     # dummy variable for gradient
     G = tf.placeholder(tf.float32, [N, p])
 
-    # may also want hyperprior here
-    B = Normal(loc=tf.zeros([p, D-1]),
-               scale=tf.ones([p, D-1]))
+    b = Exponential(rate=1.0)
+    B = Normal(loc=tf.zeros([p, D-1]), 
+               scale=tf.ones([p, D-1]) )
 
-    L = Normal(loc=tf.zeros([r, D-1]),
-               scale=tf.ones([r, D-1]))
-    z = Normal(loc=tf.zeros([N, r]),
-               scale=tf.ones([N, r]))
+    # Factorization of covariance matrix
+    # http://edwardlib.org/tutorials/klqp
+    l = Exponential(rate=1.0)
+    L = Normal(loc=tf.zeros([p, D-1]), 
+               scale=tf.ones([p, D-1]) )
+    z = Normal(loc=tf.zeros([N, p]), 
+               scale=tf.ones([N, p]))
 
     # Cholesky trick to get multivariate normal
     v = tf.matmul(G, B) + tf.matmul(z, L)
 
-    eta = tf.nn.softmax(tf.matmul(v, psi))
-    Y = Multinomial(total_count=n, probs=eta)
+    # get clr transformed values
+    eta = tf.matmul(v, psi)
+
+    Y = Multinomial(total_count=n, logits=eta)
+
 
     T = 100000  # the number of mixin samples from MCMC sampling
 
+    qb = PointMass(params=tf.Variable(tf.random_normal([])))
     qB = PointMass(params=tf.Variable(tf.random_normal([p, D-1])))
     qz = Empirical(params=tf.Variable(tf.random_normal([T, N, p])))
+    ql = PointMass(params=tf.Variable(tf.random_normal([])))
     qL = PointMass(params=tf.Variable(tf.random_normal([p, D-1])))
 
     # Imputation
     inference_z = ed.SGLD(
-        {z: qz},
+        {z: qz}, 
         data={G: G_data, Y: y_data, B: qB, L: qL}
     )
 
     # Maximization
     inference_BL = ed.MAP(
-        {B: qB, L: qL},
+        {B: qB, L: qL, b: qb, l: ql}, 
         data={G: G_data, Y: y_data, z: qz}
     )
 
-    inference_z.initialize(step_size=1e-20)
-    inference_BL.initialize()
+    inference_z.initialize(step_size=1e-10)
+    inference_BL.initialize(n_iter=1000)
+
 
     sess = ed.get_session()
     saver = tf.train.Saver()
 
     tf.global_variables_initializer().run()
-    for i in range(1000):
+    for i in range(inference_BL.n_iter):
         inference_z.update()  # e-step
         # will need to compute the expectation of z
 
