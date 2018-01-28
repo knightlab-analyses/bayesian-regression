@@ -50,7 +50,7 @@ classes = """
 """
 classifiers = [s.strip() for s in classes.split('\n') if s]
 
-description = ('Compositional data analysis tools and visualizations')
+description = ('Scalable Bayesian Regression')
 
 
 # version parsing from __init__ pulled from Flask's setup.py
