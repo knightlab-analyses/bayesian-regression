@@ -1,10 +1,11 @@
 from bayesian_regression.util.sim import chain_interactions, ols
 from bayesian_regression.util.balances import sparse_balance_basis
 
-from skbio.stats.composition import _gram_schmidt_basis, ilr
+from skbio.stats.composition import _gram_schmidt_basis, ilr, clr_inv
 from sklearn.utils import check_random_state
 from scipy.stats import norm, invwishart
 from scipy.sparse.linalg import eigsh
+from gneiss.util import match_tips
 from biom import Table
 import pandas as pd
 import numpy as np
@@ -58,40 +59,40 @@ def band_table(num_samples, num_features, tree=None,
     # construct species distributions
     table = chain_interactions(gradient, mu, sigma)
     samp_ids = ['S%d' % i for i in range(num_samples)]
-    feat_ids = ['F%d' % i for i in range(num_features)]
 
     # obtain basis required to convert from balances to proportions.
     if tree is None:
         basis = _gram_schmidt_basis(num_features)
+        feat_ids = ['F%d' % i for i in range(num_features)]
+        table = pd.DataFrame(table, index=samp_ids, columns=feat_ids)
     else:
+        feat_ids = [n.name for n in tree.tips()]
+        table = pd.DataFrame(table, index=samp_ids, columns=feat_ids)
         basis = sparse_balance_basis(tree)[0].todense()
 
     # construct balances from gaussian distribution.
     # this will be necessary when refitting parameters later.
-    Y = ilr(table)
+    Y = ilr(table, basis=clr_inv(basis))
     X = gradient.reshape(-1, 1)
     X = np.hstack((np.ones(len(X)).reshape(-1, 1), X.reshape(-1, 1)))
     pY, resid, beta = ols(Y, X)
 
     # parameter estimates
-    beta0 = np.ravel(beta[0, :]).reshape(-1, 1)
-    beta1 = np.ravel(beta[1, :]).reshape(-1, 1)
-    r = len(beta0)
+    r = beta.shape[1]
 
     # Normal distribution to simulate linear regression
     M = np.eye(r)
     # Generate covariance matrix from inverse wishart
-    sigma = invwishart.rvs(df=r+2, scale=M.dot(M.T), random_state=state)
-    w, v = eigsh(sigma, k=2)
+    Sigma = invwishart.rvs(df=r+2, scale=M.dot(M.T), random_state=state)
+    w, v = eigsh(Sigma, k=2)
     # Low rank covariance matrix
     sim_L = (v @ np.diag(w)).T
 
     # sample
     y = X.dot(beta)
-    Ys = np.vstack([state.multivariate_normal(y[i, :], sigma)
+    Ys = np.vstack([state.multivariate_normal(y[i, :], Sigma)
                     for i in range(y.shape[0])])
     Yp = Ys @ basis
-
     # calculate bias terms
     theta = -np.log(np.exp(Yp).sum(axis=1)) + alpha
 

@@ -118,7 +118,7 @@ def sparse_balance_basis(tree):
         i += 1
         nodes.append(n.name)
 
-    basis = coo_matrix((value, (row, col)), shape=(D-1, D))
+    basis = coo_matrix((value, (row, col)), shape=(D-1, D), dtype=np.float32)
 
     return basis, nodes
 
@@ -148,6 +148,7 @@ def match_tips(table, tree):
     skbio.TreeNode :
         Sub-tree with the common features.
     """
+
     tips = [x.name for x in tree.tips()]
     common_tips = set(tips) & set(table.ids(axis='observation'))
 
