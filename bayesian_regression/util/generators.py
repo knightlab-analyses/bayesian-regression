@@ -75,11 +75,11 @@ def band_table(num_samples, num_features, tree=None,
     Y = ilr(table, basis=clr_inv(basis))
     X = gradient.reshape(-1, 1)
     X = np.hstack((np.ones(len(X)).reshape(-1, 1), X.reshape(-1, 1)))
-    pY, resid, beta = ols(Y, X)
-
+    pY, resid, B = ols(Y, X)
+    gamma = B[0]
+    beta = B[1].reshape(1, -1)
     # parameter estimates
     r = beta.shape[1]
-
     # Normal distribution to simulate linear regression
     M = np.eye(r)
     # Generate covariance matrix from inverse wishart
@@ -89,7 +89,7 @@ def band_table(num_samples, num_features, tree=None,
     sim_L = (v @ np.diag(w)).T
 
     # sample
-    y = X.dot(beta)
+    y = X.dot(B)
     Ys = np.vstack([state.multivariate_normal(y[i, :], Sigma)
                     for i in range(y.shape[0])])
     Yp = Ys @ basis
@@ -105,5 +105,5 @@ def band_table(num_samples, num_features, tree=None,
 
     table = Table(table, feat_ids, samp_ids)
     metadata = pd.DataFrame({'G': gradient}, index=samp_ids)
-    return table, metadata, beta, theta
+    return table, metadata, beta, theta, gamma
 

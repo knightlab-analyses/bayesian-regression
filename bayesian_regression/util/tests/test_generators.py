@@ -12,8 +12,7 @@ class TestGenerator(unittest.TestCase):
         pass
 
     def test_band_table(self):
-        res_table, res_md, res_beta, res_theta = band_table(5, 6)
-
+        res_table, res_md, res_beta, res_theta, res_gamma = band_table(5, 6)
         mat = np.array(
             [[161.0, 88.0, 26.0, 4.0, 0.0],
              [185.0, 144.0, 40.0, 4.0, 4.0],
@@ -30,12 +29,17 @@ class TestGenerator(unittest.TestCase):
         exp_md = pd.DataFrame({'G': [2., 4., 6., 8., 10.]},
                               index=samp_ids)
         exp_beta = np.array(
-            [[0.79195959, 1.89427207, 3.41791359, 5.36656315, 7.74114548],
-             [-0.28284271, -0.48989795, -0.69282032, -0.89442719, -1.09544512]]
-            )
-        exp_theta = np.array(
-            [2.23148138, 3.64417845, 3.9674706,  3.32461839, 2.31151262]
+            [[-0.28284271, -0.48989795, -0.69282032, -0.89442719, -1.09544512]]
         )
+
+        exp_theta = np.array(
+            [2.23148138, 3.64417845, 3.9674706, 3.32461839, 2.31151262]
+        )
+
+        exp_gamma = np.array(
+            [0.79195959, 1.89427207, 3.41791359, 5.36656315, 7.74114548]
+        )
+
         self.assertEqual(exp_table, res_table)
         pdt.assert_frame_equal(exp_md, res_md)
         npt.assert_allclose(exp_beta, res_beta)
