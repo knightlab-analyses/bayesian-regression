@@ -1,7 +1,18 @@
+import pandas as pd
 import numpy as np
-from scipy.stats import norm, poisson, multinomial, multivariate_normal
 from numpy.random import RandomState
+from scipy.stats import (norm, poisson, multinomial,
+                         multivariate_normal, invwishart)
+from scipy.sparse.linalg import eigsh
+
 from skbio.stats.composition import ilr_inv, ilr, closure
+from skbio.stats.composition import _gram_schmidt_basis, ilr, clr_inv
+from sklearn.utils import check_random_state
+from bayesian_regression.util.balances import sparse_balance_basis
+
+from gneiss.util import match_tips
+from gneiss.cluster import rank_linkage
+from biom import Table
 
 
 def chain_interactions(gradient, mu, sigma):
@@ -19,8 +30,6 @@ def chain_interactions(gradient, mu, sigma):
        Vector of means.
     sigma: array_like
        Vector of standard deviations.
-    rng: np.random.RandomState
-       Numpy random state.
 
     Returns
     -------
