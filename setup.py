@@ -84,9 +84,7 @@ setup(name='bayesian-regression',
           'scikit-learn',
           'statsmodels>=0.8.0',
           'biom-format',
-          'seaborn',
-          'tensorflow',
-          'edward'
+          'seaborn'
       ],
       classifiers=classifiers,
       package_data={
