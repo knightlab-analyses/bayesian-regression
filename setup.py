@@ -13,28 +13,10 @@ import ast
 import os
 from glob import glob
 from setuptools import find_packages, setup
-from setuptools.command.build_ext import build_ext as _build_ext
 
-
-class build_ext(_build_ext):
-    def finalize_options(self):
-        _build_ext.finalize_options(self)
-        # Prevent numpy from thinking it is still in its setup process:
-        __builtins__.__NUMPY_SETUP__ = False
-        import numpy
-        self.include_dirs.append(numpy.get_include())
-
-
-# Dealing with Cython
-USE_CYTHON = os.environ.get('USE_CYTHON', False)
-ext = '.pyx' if USE_CYTHON else '.c'
 
 extensions = [
 ]
-
-if USE_CYTHON:
-    from Cython.Build import cythonize
-    extensions = cythonize(extensions)
 
 classes = """
     Development Status :: 4 - Beta
@@ -72,7 +54,6 @@ setup(name='bayesian-regression',
       scripts=glob('bayesian_regression/scripts/*.py'),
       setup_requires=['numpy >= 1.9.2'],
       ext_modules=extensions,
-      cmdclass={'build_ext': build_ext},
       install_requires=[
           'IPython >= 3.2.0',
           'matplotlib >= 1.4.3',
