@@ -50,7 +50,7 @@ classes = """
 """
 classifiers = [s.strip() for s in classes.split('\n') if s]
 
-description = ('Scalable Bayesian Regression')
+description = ('Bayesian Regression Benchmarks')
 
 
 # version parsing from __init__ pulled from Flask's setup.py
@@ -84,9 +84,7 @@ setup(name='bayesian-regression',
           'scikit-learn',
           'statsmodels>=0.8.0',
           'biom-format',
-          'seaborn',
-          'tensorflow',
-          'edward'
+          'seaborn'
       ],
       classifiers=classifiers,
       package_data={

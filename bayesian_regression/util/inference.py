@@ -1,7 +1,7 @@
 import numpy as np
 
 
-def get_batch(M, Y):
+def get_batch(M, Y, p=0.5):
     """ Get's batch data
 
     Parameters
@@ -20,12 +20,11 @@ def get_batch(M, Y):
     batch_data : np.array
         Selected data
     """
-    halfM = M // 2
     y_data = Y.data
     y_row = Y.row
     y_col = Y.col
     # get positive sample
-    positive_idx = np.random.choice(len(y_data), halfM)
+    positive_idx = np.random.choice(len(y_data), round(M * p))
     positive_row = y_row[positive_idx]
     positive_col = y_col[positive_idx]
     positive_data = y_data[positive_idx]
@@ -36,10 +35,10 @@ def get_batch(M, Y):
 
     # get negative sample
     N, D = Y.shape
-    negative_row = np.zeros(halfM)
-    negative_col = np.zeros(halfM)
-    negative_data = np.zeros(halfM)
-    for k in range(halfM):
+    negative_row = np.zeros(round(M * (1-p)))
+    negative_col = np.zeros(round(M * (1-p)))
+    negative_data = np.zeros(round(M * (1-p)))
+    for k in range(int(M * (1-p))):
         i, j = np.random.randint(N), np.random.randint(D)
         while (i, j) in idx:
             i, j = np.random.randint(N), np.random.randint(D)
